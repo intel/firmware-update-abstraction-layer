@@ -1,0 +1,14 @@
+**/venv-*
+**/.vscode
+falc-program/output
+fal-library/output
+**/*.rpm
+**/*.deb
+**/*.zip
+**/venv
+.git
+falc-program/dockerfiles
+fal-library/dockerfiles
+dist/
+integration/
+

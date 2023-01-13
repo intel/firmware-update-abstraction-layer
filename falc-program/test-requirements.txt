@@ -1,0 +1,12 @@
+#Pre-Production
+
+mock==4.0.3
+types-mock==4.0.15
+pytest==7.1.2
+pytest-cov==3.0.0
+packaging==21.3
+testtools==2.5.0
+coverage==6.3.2
+
+#Production
+-r requirements.txt

@@ -1,0 +1,36 @@
+#include <tunables/global>
+
+/usr/bin/falc {
+  include <abstractions/base>
+  include <abstractions/consoles>
+
+  capability dac_read_search,
+
+  /bin/* mrPix,
+  /boot/efi/** rw,
+  /etc/* r,
+  /etc/fwupd/daemon.conf r,
+  /proc/*/mounts r,
+  /proc/*/mountinfo r,
+  /run/mount/utab r,
+  /sys/devices/virtual/dmi/id/** r,
+  /sys/firmware/dmi/tables/DMI r,
+  /sys/firmware/dmi/tables/smbios_entry_point r,
+  /sys/firmware/efi/efivars/** w,
+  /sys/firmware/efi/esrt/** r,
+  /tmp/** mrw,
+  /var/cache/manageability/** r,
+  /usr/bin/* mrPix,
+  /bin/* mrPix,
+  /usr/bin/fwupdate rUx,
+  /usr/bin/systemctl rUx,
+  /usr/lib/** mr,
+  /usr/share/fwupd/** r,
+  /usr/share/mime/** r,
+  /usr/share/fall/* r,
+  /var/cache/fwupd/** r,
+  /var/lib/fwupd/** r,
+  /bios/* r,
+  owner /proc/*/fd/ r,
+}
+

@@ -1,0 +1,34 @@
+include(`Makefile-macros.m4')
+all: build
+
+OUTPUT=output
+CLEANUP=tmp-container.txt
+
+# ---- Dependencies ----
+FIRMWARE_FILE=firmware_info.db
+SCHEMA_FILE=firmware_schema.xsd
+
+CLEANUP += docker-sample-container/*.rpm
+CLEANUP += docker-sample-container/*.deb
+CLEANUP += docker-sample-container/sample-container.tgz
+CLEANUP += docker-sample-container/docker/*.rpm
+CLEANUP += docker-sample-container/docker/*.deb
+CLEANUP += ${OUTPUT}/*.rpm
+
+# Firmware DB file
+${OUTPUT}/${FIRMWARE_FILE}:
+	cp ${FIRMWARE_FILE} ${OUTPUT}
+
+# Conf Schema file
+${OUTPUT}/${SCHEMA_FILE}:
+	cp ${SCHEMA_FILE} ${OUTPUT}
+
+# ---- Top level ----
+
+build: ${OUTPUT}/${FIRMWARE_FILE} ${OUTPUT}/${SCHEMA_FILE} rpms debs
+
+debs: ${DEBS}
+rpms: ${RPMS}
+
+clean:
+	rm -r -f -v ${CLEANUP} && rm -rf ${OUTPUT} && mkdir -p ${OUTPUT}

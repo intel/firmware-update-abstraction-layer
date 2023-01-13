@@ -1,0 +1,6 @@
+#Production
+
+./fall-0.1.0-py3-none-any.whl
+pyinstaller==5.7
+psutil==5.9.1
+setuptools==65.6.3

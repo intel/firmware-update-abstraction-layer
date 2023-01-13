@@ -1,0 +1,5 @@
+#Production
+
+psutil==5.9.1
+xmlschema==2.1.1
+defusedxml==0.7.1

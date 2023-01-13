@@ -1,0 +1,4 @@
+*.deb
+bios/capsule.bio
+install-fal.sh
+uninstall-fal.sh

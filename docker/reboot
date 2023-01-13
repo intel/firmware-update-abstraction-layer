@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# reboot host through sysrq-trigger
+echo 1 > /proc/sys/kernel/sysrq
+echo u > /proc/sysrq-trigger
+sleep 1
+echo b > /proc/sysrq-trigger

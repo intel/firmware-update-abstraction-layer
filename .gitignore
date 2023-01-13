@@ -1,0 +1,15 @@
+.vscode/
+.coverage
+.idea/*
+**/*.pyc
+dist/
+**/.coverage
+/cover
+tmp.Dockerfile*
+output/
+output-check/
+.eggs/
+build/
+*.egg-info/
+cover/
+**/*.whl
