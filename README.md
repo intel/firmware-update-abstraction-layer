@@ -41,7 +41,7 @@ sudo apt-get -y install curl
 curl -fsSL https://get.docker.com -o get-docker.sh 
 # preview script steps before running 
 DRY_RUN=1 sh ./get-docker.sh 
-sudo sh get-docker.sh![image](https://github.com/intel-sandbox/PFU/assets/13474711/9b5b7ab0-f0a0-4fd1-99f9-92970795d7d6)
+sudo sh get-docker.sh
 ```
 
 ### Build Project
