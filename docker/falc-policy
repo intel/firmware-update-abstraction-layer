@@ -48,6 +48,7 @@ profile falc-policy flags=(attach_disconnected,mediate_deleted) {
   /usr/bin/fwupdate rUx,
   /usr/bin/systemctl rUx,
   /usr/lib/** mr,
+  /usr/sbin/reboot rUx,
   /usr/share/fall/* r,
   owner /proc/*/fd/ r,
   /bios/* mr,
