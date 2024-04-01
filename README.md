@@ -1,3 +1,10 @@
+# DISCONTINUATION OF PROJECT
+This project will no longer be maintained by Intel.  
+This project has been identified as having known security escapes.  
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
+Intel no longer accepts patches to this project.  
+
+
 # Firmware Update Abstraction Layer (FAL)
 
 The Firmware Update Abstraction Layer (FAL) is a combination of the following to provide a firmware update solution that can be used to perform FW/BIOS updates across a heterogeneous mix of edge systems.
